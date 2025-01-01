@@ -1,11 +1,7 @@
 [build]
-  command = "npm run build"
+  base = "./"
+  command = "CI=false npm run build"
   publish = "build"
-
-[build.environment]
-  NODE_ENV = "production"
-  NPM_FLAGS = "--no-optional"
-  CI = "false"
 
 [[redirects]]
   from = "/*"
